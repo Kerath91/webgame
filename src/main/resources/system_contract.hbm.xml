@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.mj.webapp.model.SystemContract" table="SYSTEM_CONTRACT">
+      <meta attribute="class-description">
+         This class contains the contracts detail. 
+      </meta>
+      <id name="contractId" type="int" column="id">
+      </id>
+      <property name="active" column="active" type="boolean"/>
+      <property name="amount" column="amount" type="big_decimal"/>
+      <property name="amountPeriod" column="amount_period" type="string"/>
+      <property name="amountType" column="amount_type" type="string"/>
+      <property name="authorizationPercent" column="authorization_percent" type="big_decimal"/>
+      <property name="fromDate" column="from_date" type="date"/>
+      <property name="orderNumber" column="order_number" type="string"/>
+      <property name="request" column="request" type="string"/>
+      <property name="toDate" column="to_date" type="date"/>
+      <property name="systemId" column="system_id" type="long"/>
+   </class>
+</hibernate-mapping>
